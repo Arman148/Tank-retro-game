@@ -1,0 +1,104 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="tank,html5,canvas,ai">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<title>Battle City </title>
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src = "js/global.js"></script>
+	<script type="text/javascript" src = "js/sound.js"></script>
+	<script type="text/javascript" src = "js/map.js"></script>
+	<script type="text/javascript" src = "js/levels.js"></script>
+	<script type="text/javascript" src = "js/StageStart.js"></script>
+	<script type="text/javascript" src = "js/sprite.js"></script>
+	<script type="text/javascript" src = "js/score.js"></script>
+	<script type="text/javascript" src = "js/tank_start.js"></script>
+	<script type="text/javascript" src = "js/tank.js"></script>
+	<script type="text/javascript" src = "js/tanks.js"></script>
+	<script type="text/javascript" src = "js/bullet.js"></script>
+	<script type="text/javascript" src = "js/hit_f.js"></script>
+	<script type="text/javascript" src = "js/bomb_f.js"></script>
+	<script type="text/javascript" src = "js/food.js"></script>
+	<script type="text/javascript" src = "js/scoreBoard.js"></script>
+	<script type="text/javascript" src = "js/score.js"></script>
+	<script type="text/javascript" src = "js/tiv.js"></script>
+	<script type="text/javascript" src = "js/main.js"></script>
+	<script type="text/javascript" src = "js/heap.js"></script>
+	<script type="text/javascript" src = "js/log.js"></script>
+	<script type="text/javascript">window.onload = function(){main()}</script>
+</head>
+<body >
+
+	<div id="instruction">
+		<h1>Instruction</h1>
+        <div id="first_player">
+            <h2>First Player</h2>
+            <div>
+                <button>w</button>
+            </div>
+            <div>
+                <button>a</button>
+                <button>s</button>
+                <button>d</button>
+                <br><br><br><br>Movement<br><br>
+                <button>x</button>
+                <br><br><br><br>shooting
+            </div>
+        </div>
+        <div id="second_player">
+            <h2>Second Player</h2>
+            <div>
+                <button>i</button>
+            </div>
+            <div>
+                <button>j</button>
+                <button>k</button>
+                <button>l</button>
+                <br><br><br><br>Movement<br><br>
+                <button>/</button>
+                <br><br><br><br>shooting
+            </div>
+        </div>
+    </div>
+
+
+
+	<div class="container">
+	<div id = "srcImg">
+		<img src="img/spr.gif" id = "spr"/>
+	</div>
+	
+	<div id="game">
+		<canvas id="wall" width="512" height="448"></canvas> 
+		<canvas id="main" width="512" height="448"></canvas>
+		<canvas id="grass" width="512" height="448"></canvas>	
+		<canvas id="upp" width="512" height="448"></canvas> 
+		<canvas id="stage" width="512" height="448"></canvas> 
+	</div>
+	
+	
+	<audio id="attack" src="sound/attack.mp3"></audio>
+	<audio id="bomb0" src="sound/bomb0.mp3"></audio>
+	<audio id="bomb1" src="sound/bomb1.mp3"></audio>
+	<audio id="food" src="sound/food.mp3"></audio>
+	<audio id="stageStart" src="sound/stageStart.mp3"></audio>
+	<audio id="shootOver" src="sound/shootOver.mp3"></audio>
+	</div>
+
+	<h1 style="color: white; font-size: 0.7em; font-family: 'Press Start 2P', cursive;">Autors</h1>
+
+	<div style="color: white;" id="autors">
+        Game Design: Arman Vardanyan <br><br>
+        Map Design: Arman Vardanyan <br><br>
+        Audio Designer: Arman Vardanyan <br><br>
+        Music and Sound Effects: Arman Vardanyan <br><br>
+        Testing: Arman Vardanyan <br><br>
+        Producer: Arman Vardanyan <br><br>
+        Programmer: Arman Vardanyan <br><br>
+        Sponsor: FIIT STU
+    </div>
+	
+
+</body>
+</html>
